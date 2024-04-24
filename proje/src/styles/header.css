@@ -1,0 +1,56 @@
+.app-header {
+    background-color: #007bff; /* Darker shade for contrast */
+    color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); /* subtle shadow for depth */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between; /* ensures nav is pushed to the right */
+    align-items: center;
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 1.5rem; /* responsive font size */
+    font-weight: bold;
+  }
+  
+
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* consistent spacing between links */
+  }
+  
+  .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px; /* clickable area */
+    transition: color 0.3s; /* smooth transition for hover effect */
+  }
+  
+  .nav-links li a:hover {
+    color: #cce5ff; /* lighter shade for hover state */
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center; /* centered for mobile */
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      padding: 5px 0; /* spacing between links on mobile */
+    }
+  }
+  
