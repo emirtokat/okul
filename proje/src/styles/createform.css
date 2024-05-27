@@ -29,6 +29,7 @@
   .create-form button {
     padding: 5px 10px;
     margin-right: 5px;
+    margin-bottom:5px;
     background-color: #17a2b8;
     color: white;
     border: none;

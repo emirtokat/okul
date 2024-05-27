@@ -1,19 +1,18 @@
-/* Global Styles */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa; /* Light grey background */
-    color: #212529; /* Almost black text */
+    background-color: #f8f9fa; 
+    color: #212529; 
   }
   
   a {
-    color: #007bff; /* Bootstrap primary blue for links */
-    text-decoration: none; /* No underlines for links */
+    color: #007bff; 
+    text-decoration: none; 
   }
   
   a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
+    text-decoration: underline; 
   }
   
   .container {
@@ -22,7 +21,6 @@ body, html {
     padding: 20px;
   }
   
-  /* Utility Classes */
   .text-center {
     text-align: center;
   }
