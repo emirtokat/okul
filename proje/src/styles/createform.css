@@ -1,89 +1,129 @@
-/* styles/createform.css */
-
-.create-form {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 700px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.create-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
-}
-
-.create-form input[type="text"],
-.create-form input[type="email"],
-.create-form select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-.create-form button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  margin-right: 10px;
-}
-
-.create-form button:hover {
-  background-color: #0056b3;
-}
-
-.option {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.option-input {
-  flex: 1;
-  margin-left: 8px;
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.question-block {
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.link-display {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.link-display p {
-  margin: 0 0 10px;
-  color: #333;
-}
-
-.link-display a {
-  color: #007bff;
-  text-decoration: none;
-  word-break: break-all;
-}
-
-.link-display a:hover {
-  text-decoration: underline;
-}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f7f8f8, #acbb78);
+  }
+  
+  .create-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .create-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .create-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .create-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .question-block {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .option-input {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  button.add-question-btn {
+    background-color: #007bff; /* Mavi */
+    border-color: #007bff;
+    color: white;
+  }
+  
+  button.add-question-btn:hover {
+    background-color: #0056b3; /* Daha koyu mavi */
+    border-color: #004085;
+    color: white;
+  }
+  
+  button.submit-form-btn {
+    background-color: #28a745; /* Yeşil */
+    border-color: #28a745;
+    color: white;
+  }
+  
+  button.submit-form-btn:hover {
+    background-color: #218838; /* Daha koyu yeşil */
+    border-color: #1e7e34;
+    color: white;
+  }
+  
+  button.btn-danger {
+    background-color: #dc3545; /* Kırmızı */
+    border-color: #dc3545;
+    color: white;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #c82333; /* Daha koyu kırmızı */
+    border-color: #bd2130;
+    transform: translateY(-2px);
+    color: white;
+  }
+  
+  button.btn-secondary {
+    background-color: #6c757d; /* Gri */
+    border-color: #6c757d;
+    color: white;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #5a6268; /* Daha koyu gri */
+    border-color: #545b62;
+    transform: translateY(-2px);
+    color: white;
+  }
+  
+  .link-display {
+    margin-top: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .link-display a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .link-display a:hover {
+    text-decoration: underline;
+  }
+  

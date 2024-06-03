@@ -1,56 +1,29 @@
-.app-header {
-    background-color: #007bff; /* Darker shade for contrast */
-    color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); /* subtle shadow for depth */
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between; /* ensures nav is pushed to the right */
-    align-items: center;
-  }
-  
-  .app-title {
-    margin: 0;
-    font-size: 1.5rem; /* responsive font size */
-    font-weight: bold;
-  }
-  
+.navbar {
+  background-color: #343a40; /* Navbar arka plan rengi */
+  padding: 1rem 1.5rem; /* Daha geniş padding */
+}
 
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px; /* consistent spacing between links */
-  }
-  
-  .nav-links li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 10px; /* clickable area */
-    transition: color 0.3s; /* smooth transition for hover effect */
-  }
-  
-  .nav-links li a:hover {
-    color: #cce5ff; /* lighter shade for hover state */
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .header-content {
-      flex-direction: column;
-      text-align: center; /* centered for mobile */
-    }
-  
-    .nav-links {
-      margin-top: 10px;
-    }
-  
-    .nav-links li {
-      padding: 5px 0; /* spacing between links on mobile */
-    }
-  }
-  
+.navbar-brand {
+  font-size: 1.5rem; /* Daha büyük yazı tipi */
+  color: #ffffff; /* Beyaz yazı rengi */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* Beyaz yazı rengi */
+  padding: 0.5rem 1rem; /* Daha geniş padding */
+  font-size: 1.1rem; /* Daha büyük yazı tipi */
+  transition: background-color 0.3s, color 0.3s; /* Hover efekti için geçişler */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #495057; /* Hover arka plan rengi */
+  color: #ffffff; /* Hover yazı rengi */
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Toggler düğmesi rengi */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Toggler düğmesi ikonu */
+}

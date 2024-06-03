@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './styles/loginform.css';
 
 const LoginForm = () => {
@@ -15,15 +14,18 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="login-form">
-      <label>Email:</label>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      <label>Password:</label>
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      <button type="submit">Login</button>
-      <Link to="/forgot-password">Forgot Password?</Link>
-      <Link to="/register">Don't have an account? Register</Link>
-    </form>
+    <div className="login-container">
+      <form onSubmit={handleSubmit} className="login-form">
+        <h2>Login</h2>
+        <label>Email:</label>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" required />
+        <label>Password:</label>
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" required />
+        <button type="submit" className="btn btn-primary">Login</button>
+        <Link to="/forgot-password" className="btn-link">Forgot Password?</Link>
+        <Link to="/register" className="btn-link">Don't have an account? Register</Link>
+      </form>
+    </div>
   );
 };
 
